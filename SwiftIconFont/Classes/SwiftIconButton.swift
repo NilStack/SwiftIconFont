@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 open class SwiftIconButton: UIButton {
-    @IBInspectable var Icon: String = "" {
+    @IBInspectable open var Icon: String = "" {
         didSet {
             self.parseIcon()
             self.setTitle(Icon, for: .normal)
