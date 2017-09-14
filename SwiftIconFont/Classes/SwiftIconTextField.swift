@@ -9,11 +9,11 @@
 import UIKit
 
 @IBDesignable
-public class SwiftIconTextField: UITextField {
+open class SwiftIconTextField: UITextField {
     
     @IBInspectable var RuntimeParse: Bool = false
     
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         self.parseIcon()
         if RuntimeParse {
             self.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)

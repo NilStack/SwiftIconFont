@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class SwiftIconLabel: UILabel {
+open class SwiftIconLabel: UILabel {
     @IBInspectable var Icon: String = "" {
         didSet {
             self.text = Icon
@@ -17,7 +17,7 @@ public class SwiftIconLabel: UILabel {
         }
     }
     
-    public override func awakeFromNib() {
+    open override func awakeFromNib() {
         self.parseIcon()
     }
 }

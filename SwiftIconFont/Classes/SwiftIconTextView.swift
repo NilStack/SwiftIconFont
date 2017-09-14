@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class SwiftIconTextView: UITextView {
+open class SwiftIconTextView: UITextView {
     @IBInspectable public var Icon: String = "" {
         didSet {
             self.text = Icon
@@ -17,7 +17,7 @@ public class SwiftIconTextView: UITextView {
         }
     }
     
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         self.parseIcon()
     }
 }
