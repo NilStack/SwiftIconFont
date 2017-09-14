@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class SwiftIconButton: UIButton {
+open class SwiftIconButton: UIButton {
     @IBInspectable var Icon: String = "" {
         didSet {
             self.parseIcon()
@@ -17,7 +17,7 @@ public class SwiftIconButton: UIButton {
         }
     }
     
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         self.parseIcon()
     }
 }
