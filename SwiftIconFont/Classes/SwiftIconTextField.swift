@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class SwiftIconTextField: UITextField {
+public class SwiftIconTextField: UITextField {
     
     @IBInspectable var RuntimeParse: Bool = false
     
